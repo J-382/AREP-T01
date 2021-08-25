@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0px;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(53,184,149,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    font-family: 'Montserrat', 'Arial';
+}
+
+.user_input {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2.5vh;
+    font-family: 'Montserrat', 'Arial';
+}
+
+.user_input h3 {
+    margin-right: 1vw;
+}
+
+.user_search{
+    font-family: 'Montserrat', 'Arial';
+    width: 21vw;
+    height: 3vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px rgba(0, 0, 0, 0.2) solid;
+    border-radius: 10px;
+    padding-left: 0.75vw;
+}
+
+.user_search:focus {
+    outline: none;
+}
+
+.user_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2vw;
+    background-color: transparent;
+    width: 2vw;
+    height: 3.1vh;
+}
+
+.user_button label {
+    color:rgba(0, 0, 0, 0.5)
+}
+
+.wildcard_info {
+    width: 30vw;
+}
+
+.wildcard_info h1 {
+    margin-bottom: 2.5vh;
+}
+
+.card {
+    border: 3px white solid;
+    height: auto;
+    border-radius: 20px;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.125);
+}
+
+.header {
+    display: flex;
+    height: 10vh;
+    position: fixed;
+    border-bottom: 3px rgba(0, 0, 0, 0.1) solid;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 7px 19px 4px rgba(0,0,0,0.48); 
+    box-shadow: 3px 7px 19px 4px rgba(0,0,0,0.48);
+}
+
+.examples {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    margin-left: 15vw;
+}
+
+.examples_card {
+    border-top: 3px #C54212 solid;
+    background-color: white;
+    padding: 1vw;
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 7px 9px 0px rgba(0,0,0,0.34); 
+    box-shadow: 0px 7px 9px 0px rgba(0,0,0,0.34);
+    transition: transform 0.5s;
+}
+
+.examples_card img {
+    width: 150px;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    border-radius: 10px;
+}
+
+.examples_card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.user_button i {
+    transition: color 0.5s;
+}
+
+.user_button i:hover {
+    color:rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}

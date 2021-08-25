@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.getStock()</title>
+    <link rel="stylesheet" href="./statics/css/stock.css">
+</head>
+<body>
+    <div class="header">
+        <a href="./page.html"><img src="./statics/img/Back.png" alt="Back"></a>
+    </div>
+    <div class="timeSeries_menu">
+        <h3 class="tab">Intraday</h3>
+        <h3 class="tab tab_active">Daily</h3>
+        <h3 class="tab">Weekly</h3>
+        <h3 class="tab">Monthly</h3>
+    </div>
+    <div class="container">
+        <div class="data_container">
+            <div id="myChart" class="chart--container visible_data"></div>
+            <div id="myTable" class="datatable_container" style="padding: 1vw">
+                <table class="datatable_container visible_data">
+                    <tr>
+                        <td>
+                            <table class="datatable datatable_header" cellspacing="0">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Low</th>
+                                    <th>Volume</th>
+                                    <th>Open</th>
+                                    <th>High</th>
+                                    <th>Close</th>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="stocktable_container" class="stocktable_container">
+                                <table id="datatable" class="datatable stocktable" cellspacing="0"></table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <input id="toggle_button" type="button" value="Show data">
+    </div>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="./statics/js/stock.js"></script>
+</body>
+</html>
